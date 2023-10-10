@@ -25,5 +25,5 @@ if __name__ == "__main__":
         filename = '{}_aggregate_supply_and_burn.csv'.format(''.join(filter(str.isalnum, df["create_ts"].max())))
         df.drop('hour', axis=1).to_csv(
             os.path.join(output_dir, filename),
-            index=False
+            index=True
         )
