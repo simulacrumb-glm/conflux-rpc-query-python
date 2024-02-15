@@ -66,7 +66,7 @@ if __name__ == '__main__':
     
     account_from = {
         "private_key": os.environ.get("private_key", yourprivatekey), # this will prioritize env variable 'private_key', then 'yourprivatekey'
-        "address": os.environ.get("address", youraddress),  # this will prioritize env variable 'address', then 'yourprivatekey'
+        "address": os.environ.get("address", youraddress),  # this will prioritize env variable 'address', then 'youraddress'
     }
     assert account_from["private_key"], 'account_from["private_key"] is not set'
     assert account_from["address"], 'account_from["address"] is not set'
